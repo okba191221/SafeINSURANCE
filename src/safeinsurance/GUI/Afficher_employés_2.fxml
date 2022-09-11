@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="528.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.Afficher_employésController">
+   <children>
+      <TextField fx:id="resNom" layoutX="70.0" layoutY="207.0" prefHeight="25.0" prefWidth="214.0" promptText="nom" />
+      <TextField fx:id="resPrenom" layoutX="70.0" layoutY="257.0" prefHeight="25.0" prefWidth="214.0" promptText="prenom" />
+      <TextField fx:id="resFonction" layoutX="70.0" layoutY="304.0" prefHeight="25.0" prefWidth="214.0" promptText="fonction" />
+      <TextField fx:id="resMatricule" layoutX="70.0" layoutY="354.0" onMouseClicked="#getSelected" prefHeight="25.0" prefWidth="214.0" promptText="matricule" />
+      <TextField fx:id="resCIN" layoutX="70.0" layoutY="397.0" prefHeight="25.0" prefWidth="214.0" promptText="cin" />
+      <TextField fx:id="resTel" layoutX="70.0" layoutY="442.0" prefHeight="25.0" prefWidth="214.0" promptText="tel" />
+      <TableView fx:id="listeEmployés" layoutX="290.0" onMouseClicked="#getSelected" prefHeight="512.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="resLname" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="resName" prefWidth="75.0" text="prenom" />
+            <TableColumn fx:id="resFct" prefWidth="75.0" text="fonction" />
+            <TableColumn fx:id="resMat" prefWidth="75.0" text="matricule" />
+            <TableColumn fx:id="resId" prefWidth="75.0" text="cin" />
+            <TableColumn fx:id="resMob" prefWidth="75.0" text="tel" />
+        </columns>
+      </TableView>
+      <TextField blendMode="DARKEN" layoutY="207.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="nom" />
+      <TextField blendMode="DARKEN" layoutY="257.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="prenom" />
+      <TextField blendMode="DARKEN" layoutY="304.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="fonction" />
+      <TextField blendMode="DARKEN" layoutY="354.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="matricule" />
+      <TextField blendMode="DARKEN" layoutY="397.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="cin" />
+      <TextField blendMode="DARKEN" layoutY="442.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="tel" />
+      <Button layoutX="42.0" layoutY="23.0" mnemonicParsing="false" onAction="#Edit" prefHeight="52.0" prefWidth="181.0" style="-fx-background-color: Green;" text="Modifier">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="42.0" layoutY="99.0" mnemonicParsing="false" onAction="#delete" prefHeight="52.0" prefWidth="181.0" style="-fx-background-color: red;" text="Supprimer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

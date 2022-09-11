@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="684.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="gui.GestionaireClientController">
+   <children>
+      <TableView fx:id="table_client" layoutY="279.0" onMouseClicked="#getSelected" prefHeight="200.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="cocin" prefWidth="80.00000250339508" text="Cin" />
+          <TableColumn fx:id="conom" prefWidth="66.0000228881836" text="Nom" />
+            <TableColumn fx:id="coprenom" prefWidth="72.6666259765625" text="Prenom" />
+            <TableColumn fx:id="cotel" prefWidth="68.00007629394531" text="Telephone" />
+            <TableColumn fx:id="corole" prefWidth="70.6666259765625" text="Role" />
+            <TableColumn fx:id="coemail" prefWidth="62.6666259765625" text="Email" />
+            <TableColumn fx:id="conp" prefWidth="58.0" text="Num_Permis" />
+            <TableColumn fx:id="codate" prefWidth="62.000030517578125" text="Délivré_le" />
+            <TableColumn fx:id="coimmatricule" prefWidth="69.3333740234375" text="Immatricule" />
+            <TableColumn fx:id="comdp" prefWidth="62.6666259765625" text="MDP" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtcin" layoutX="79.0" layoutY="29.0" />
+      <Text layoutX="21.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cin" />
+      <TextField fx:id="txtrole" layoutX="79.0" layoutY="175.0" />
+      <TextField fx:id="txttel" layoutX="79.0" layoutY="137.0" />
+      <TextField fx:id="txtprenom" layoutX="79.0" layoutY="97.0" />
+      <TextField fx:id="txtnom" layoutX="79.0" layoutY="64.0" />
+      <TextField fx:id="txtmdp" layoutX="328.0" layoutY="175.0" />
+      <TextField fx:id="txtimmatricule" layoutX="328.0" layoutY="137.0" />
+      <TextField fx:id="txtdelivrele" layoutX="328.0" layoutY="97.0" text="DD-MM-AAAA" />
+      <TextField fx:id="txtnumpermis" layoutX="328.0" layoutY="64.0" />
+      <TextField fx:id="txtemail" layoutX="328.0" layoutY="29.0" />
+      <Text layoutX="17.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text layoutX="18.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+      <Text layoutX="15.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone" />
+      <Text layoutX="18.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+      <Text layoutX="256.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MDP" />
+      <Text layoutX="256.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Immatricule" />
+      <Text layoutX="256.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Délivré_le" />
+      <Text layoutX="254.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Num_Permis" />
+      <Text layoutX="254.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Line endX="-2.9999847412109375" endY="184.00001525878906" layoutX="241.0" layoutY="14.0" startX="-2.9999847412109375" startY="13.999994277954102" />
+      <Line endX="-2.9999847412109375" endY="184.00001525878906" layoutX="492.0" layoutY="14.0" startX="-2.9999847412109375" startY="13.999994277954102" />
+      <Button layoutX="556.0" layoutY="36.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="67.0" text="ajouter" />
+      <Button layoutX="556.0" layoutY="106.0" mnemonicParsing="false" onAction="#edit" prefHeight="25.0" prefWidth="67.0" text="modifier" />
+      <Button layoutX="556.0" layoutY="173.0" mnemonicParsing="false" onAction="#delete" text="supprimer" />
+   </children>
+</AnchorPane>

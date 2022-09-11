@@ -10,6 +10,7 @@ package safeinsurance;
  * @author okba
  */
 public class SafeINSURANCE {
+    
 
     /**
      * @param args the command line arguments
