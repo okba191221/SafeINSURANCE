@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.InterfaceController">
+   <children>
+      <ImageView fitHeight="96.0" fitWidth="651.0" layoutX="12.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/p3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="432.0" fitWidth="217.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/p1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginBtn" layoutX="479.0" layoutY="184.0" mnemonicParsing="false" onAction="#login_user" prefHeight="33.0" prefWidth="150.0" text="Login" />
+      <MenuButton fx:id="choiceRegistre" layoutX="283.0" layoutY="188.0" mnemonicParsing="false" onAction="#chooseRegistre" prefHeight="33.0" prefWidth="160.0" text="Registre">
+        <items>
+          <MenuItem fx:id="RegClt" mnemonicParsing="false" onAction="#RegistreClient" text="Client" />
+          <MenuItem mnemonicParsing="false" onAction="#RegistreEmployee" text="Employé" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
