@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package safeinsurance.test;
+
+
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.mail.MessagingException;
+import safeinsurance.entites.EmailSend;
+import safeinsurance.test.NewFXMain;
+import safeinsurance.tools.MyConnection;
+
+
+/**
+ *
+ * @author okba
+ */
+public class main {
+
+    public static void main(String[] args) {
+        try {
+            MyConnection c = MyConnection.getInstance();
+            System.out.println(c);
+            MyConnection c1 = MyConnection.getInstance();
+            System.out.println(c1);
+            
+            
+            EmailSend mail = new EmailSend();
+            mail.setupServerProperties();
+            mail.draftEmail("aymenfdf3@gmail.com");
+            mail.sendEmail();
+        } catch (MessagingException ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+}

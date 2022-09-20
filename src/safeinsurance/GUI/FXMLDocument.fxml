@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="263.0" layoutY="27.0" text="Gestion Rapport Expertise" textFill="#1941cf">
+         <font>
+            <Font name="Bodoni MT Black" size="29.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="93.0" prefHeight="272.0" prefWidth="340.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="10.0" layoutY="18.0" text=" Rapport : " textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="55.0" text=" Constat :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="97.0" text="Mat employee :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="136.0" text=" Assurance :" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="19.0" layoutY="220.0" text="Date Rapport :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt_id_rapport" layoutX="148.0" layoutY="18.0" />
+            <TextField fx:id="txt_id_constat" layoutX="148.0" layoutY="55.0" />
+            <TextField fx:id="txt_mat_employee" layoutX="148.0" layoutY="97.0" />
+            <TextField fx:id="txt_id_assurance" layoutX="148.0" layoutY="136.0" />
+            <TextField fx:id="txt_piece_jointe" layoutX="150.0" layoutY="176.0" />
+            <TextField fx:id="txt_date_rapport" layoutX="151.0" layoutY="214.0" />
+            <Button layoutX="16.0" layoutY="176.0" mnemonicParsing="false" onAction="#upload" prefHeight="35.0" prefWidth="95.0" text="Piece Jointe " textFill="#bf0c0c">
+               <font>
+                  <Font name="Arial Black" size="11.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <TableView fx:id="list" layoutX="388.0" layoutY="93.0" onMouseClicked="#getSelected" prefHeight="272.0" prefWidth="499.0">
+        <columns>
+          <TableColumn fx:id="id_rapport_list" prefWidth="75.0" text="ID Rapport" />
+          <TableColumn fx:id="id_constat_list" prefWidth="75.0" text="ID constat" />
+            <TableColumn fx:id="mat_employee_list" prefWidth="86.4000244140625" text="Mat Employee" />
+            <TableColumn fx:id="id_assurence_list" prefWidth="78.39996337890625" text="ID assurance" />
+            <TableColumn fx:id="piece_jointe_list" prefWidth="97.59991455078125" text="Piece Jointe" />
+            <TableColumn fx:id="date_rapport_list" prefWidth="83.2000732421875" text="Date Rapport" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnajouter" layoutX="388.0" layoutY="372.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="37.0" prefWidth="139.0" text="Ajouter" textFill="#cf1212">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnmodifier" layoutX="565.0" layoutY="372.0" mnemonicParsing="false" onAction="#modifier" prefHeight="37.0" prefWidth="156.0" text="Modifier" textFill="#d11d1d">
+         <font>
+            <Font name="Arial Narrow Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnsupprimer" layoutX="748.0" layoutY="372.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="37.0" prefWidth="139.0" text="Supprimer" textFill="#df1a1a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnmail" layoutX="721.0" layoutY="464.0" mnemonicParsing="false" onAction="#mail" prefHeight="37.0" prefWidth="235.0" text="Envoyer Mail" textFill="#df1a1a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="20.0" />
+         </font></Button>
+    </children>
+</AnchorPane>
