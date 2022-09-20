@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1016.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ConstatController">
+   <children>
+      <Label layoutX="43.0" layoutY="187.0" text="identidiant assurance">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="BOTTOM" layoutX="52.0" layoutY="40.0" text="Constat">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="139.0" text="identifiant constat">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="235.0" text="date">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="279.0" text="lieu">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idconstat" layoutX="261.0" layoutY="140.0" />
+      <TextField fx:id="idassurance" layoutX="261.0" layoutY="188.0" />
+      <TextField fx:id="iddate" layoutX="261.0" layoutY="236.0" />
+      <TextField fx:id="idlieu" layoutX="261.0" layoutY="287.0" />
+      <TextField fx:id="idpiecejointe" layoutX="261.0" layoutY="336.0" />
+      <Button layoutX="144.0" layoutY="457.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="30.0" prefWidth="75.0" text="Modifier" />
+      <Button layoutX="51.0" layoutY="457.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="30.0" prefWidth="75.0" text="Ajouter" />
+      <Button layoutX="234.0" layoutY="457.0" mnemonicParsing="false" onAction="#Supprimer" text="supprimer" />
+      <TableView fx:id="table" layoutX="446.0" layoutY="149.0" onMouseClicked="#getselected" prefHeight="314.0" prefWidth="561.0">
+        <columns>
+          <TableColumn fx:id="colconstat" prefWidth="122.0" text="identifiant constat" />
+          <TableColumn fx:id="colassurance" prefWidth="133.0" text="identifiant assurance" />
+            <TableColumn fx:id="coldate" prefWidth="106.0" text="date" />
+            <TableColumn fx:id="collieu" prefWidth="108.0" text="lieu" />
+            <TableColumn fx:id="colpiece" prefWidth="91.0" text="piece jointe" />
+        </columns>
+      </TableView>
+      <Button layoutX="55.0" layoutY="349.0" mnemonicParsing="false" onAction="#upload" text="piece-joint" />
+      <Button layoutX="701.0" layoutY="532.0" mnemonicParsing="false" onAction="#email" text="send mail" />
+   </children>
+</AnchorPane>
