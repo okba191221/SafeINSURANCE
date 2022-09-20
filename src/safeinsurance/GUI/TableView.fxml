@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="708.0" prefWidth="1348.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.TableViewController">
+    <children>
+        <TableView fx:id="table" layoutX="440.0" layoutY="174.0" onMouseClicked="#test" prefHeight="469.0" prefWidth="905.0">
+            <columns>
+                <TableColumn fx:id="idimmat" prefWidth="98.0" text="Immatricule" />
+                <TableColumn fx:id="idtype" prefWidth="52.0" text="Type" />
+                <TableColumn fx:id="idmarque" prefWidth="75.0" text="Marque" />
+                <TableColumn fx:id="idcarburant" prefWidth="118.0" text="Type Carburant" />
+                <TableColumn fx:id="idchf" prefWidth="128.0" text="NB chevaux fiscaux" />
+                <TableColumn fx:id="iddate" prefWidth="118.0" text="Date Circulation" />
+                <TableColumn fx:id="idage" prefWidth="58.0" text="Age" />
+                <TableColumn fx:id="idestimation" prefWidth="163.0" text="Estimation Rapprochée" />
+                <TableColumn fx:id="idclasse" prefWidth="94.0" text="Classe" />
+            </columns>
+        </TableView>
+        <Text layoutX="27.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Véhicules">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Text>
+        <HBox alignment="CENTER" layoutX="841.0" layoutY="21.0">
+            <children>
+          
+            </children>
+        </HBox>
+        <Button layoutX="95.0" layoutY="603.0" mnemonicParsing="false" onAction="#saveEvent" text="Save" />
+        <Button layoutX="268.0" layoutY="603.0" mnemonicParsing="false" onAction="#deleteEvent" text="Delete" />
+        <Button layoutX="179.0" layoutY="603.0" mnemonicParsing="false" onAction="#updateEvent" text="Edit" />
+      <Label layoutX="69.0" layoutY="173.0" text="Immatricule">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="212.0" text="Type">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="246.0" text="Marque">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="288.0" text="Type Carburant">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="332.0" text="NB chevaux fiscaux">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="368.0" text="Date Circulation">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="408.0" text="Age">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="447.0" text="Estimation Rapprochée">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="484.0" text="Classe">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtimmatricule" layoutX="239.0" layoutY="174.0" />
+      <TextField fx:id="txttype" layoutX="239.0" layoutY="213.0" />
+      <TextField fx:id="txtmarque" layoutX="239.0" layoutY="247.0" />
+      <TextField fx:id="txtcarburant" layoutX="239.0" layoutY="289.0" />
+      <TextField fx:id="txtchevfisc" layoutX="239.0" layoutY="330.0" />
+      <TextField fx:id="txtage" layoutX="239.0" layoutY="409.0" />
+      <TextField fx:id="txtestimation" layoutX="239.0" layoutY="448.0" />
+      <TextField fx:id="txtclasse" layoutX="239.0" layoutY="485.0" />
+      <TextField fx:id="txtdate" layoutX="239.0" layoutY="375.0" text="DD-MM-AAAA" />
+    </children>
+</AnchorPane>

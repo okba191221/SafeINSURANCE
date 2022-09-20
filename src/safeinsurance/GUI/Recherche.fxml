@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPanne" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.RechercheController">
+   <children>
+      <Label layoutX="64.0" layoutY="82.0" text="CIN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="29.0" text="Recherche">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_cin" layoutX="109.0" layoutY="80.0" prefHeight="25.0" prefWidth="310.0" />
+      <Button layoutX="497.0" layoutY="334.0" mnemonicParsing="false" onAction="#Send" text="Valider">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tab_assurance" layoutX="26.0" layoutY="113.0" prefHeight="200.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="col_assurance" prefWidth="104.0" text="Assurance" />
+          <TableColumn fx:id="col_cin" prefWidth="85.0" text="CIN" />
+            <TableColumn fx:id="col_immatricule" prefWidth="117.0" text="Immatricule" />
+            <TableColumn fx:id="col_type" prefWidth="111.0" text="Type" />
+            <TableColumn fx:id="col_mantant" prefWidth="119.0" text="Montant" />
+        </columns>
+      </TableView>
+      <Button layoutX="453.0" layoutY="80.0" mnemonicParsing="false" onAction="#Recherche" text="Recherche" />
+   </children>
+</AnchorPane>
