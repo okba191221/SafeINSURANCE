@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.RegisterController">
+   <children>
+      <AnchorPane prefHeight="530.0" prefWidth="633.0">
+         <children>
+            <ImageView fitHeight="531.0" fitWidth="653.0" layoutY="-2.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/b1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="200.0" />
+            <AnchorPane fx:id="txtdate" layoutX="124.0" layoutY="94.0" prefHeight="289.0" prefWidth="406.0" style="-fx-background-color: #667882;">
+               <children>
+                  <TextField fx:id="txtcin" alignment="CENTER" layoutX="9.0" layoutY="45.0" promptText="CIN" />
+                  <TextField fx:id="txtnom" alignment="CENTER" layoutX="246.0" layoutY="45.0" promptText="Nom" />
+                  <TextField fx:id="txtprénom" alignment="CENTER" layoutX="9.0" layoutY="86.0" promptText="Prénom" />
+                  <TextField fx:id="txttel" alignment="CENTER" layoutX="246.0" layoutY="86.0" promptText="Tél" />
+                  <TextField fx:id="txtnum_permis" alignment="CENTER" layoutX="246.0" layoutY="129.0" promptText="Num_permis" />
+                  <TextField fx:id="txtemail" alignment="CENTER" layoutX="9.0" layoutY="129.0" promptText="Email" />
+                  <PasswordField fx:id="txtpassword" alignment="CENTER" layoutX="243.0" layoutY="169.0" promptText="Password" />
+                  <Button layoutX="168.0" layoutY="244.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #ADD8E6;" text="Register" textFill="#03081b">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btncancel" layoutX="304.0" layoutY="244.0" mnemonicParsing="false" onAction="#ferme" style="-fx-background-color: #ADD8E6;" text="Cancel" textFill="#03081b">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtdélivré_le" alignment="CENTER" layoutX="129.0" layoutY="208.0" promptText="AAAA-MM-JJ" />
+                  <Button layoutX="44.0" layoutY="244.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #ADD8E6;" text="Acceuil" textFill="#03081b">
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="txtfonction" alignment="CENTER" layoutX="9.0" layoutY="169.0" promptText="Fonction" />
+                  <Label layoutX="49.0" layoutY="14.0" text="Soyez le bienvenu notre clientéle inscriez-vous" textFill="#fafcff">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="211.0" prefHeight="17.0" prefWidth="79.0" text="Délivré-le" textFill="#f5ecec">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets top="2.0" />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

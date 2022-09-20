@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.InterfaceController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="3.0" prefHeight="393.0" prefWidth="593.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="422.0" layoutX="-5.0" layoutY="-5.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/p1.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="419.0" layoutY="-3.0" prefHeight="400.0" prefWidth="182.0" style="-fx-background-color: #B5DED0;">
+               <children>
+                  <Button fx:id="loginBtn" layoutX="16.0" layoutY="231.0" mnemonicParsing="false" onAction="#login_user" prefHeight="33.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #222224; -fx-border-width: 0px 0px 2px 0px;" text="Authentification">
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <MenuButton fx:id="choiceRegistre" alignment="CENTER" layoutX="11.0" layoutY="92.0" mnemonicParsing="false" onAction="#chooseRegistre" prefHeight="33.0" prefWidth="160.0" style="-fx-background-color: transparent; -fx-border-color: #222224; -fx-border-width: 0px 0px 2px 0px;" text="Inscription">
+                    <items>
+                      <MenuItem fx:id="RegClt" mnemonicParsing="false" onAction="#RegistreClient" text="Client" />
+                      <MenuItem mnemonicParsing="false" onAction="#RegistreEmployee" text="Employé" />
+                    </items>
+                     <font>
+                        <Font name="Arial Black" size="13.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
