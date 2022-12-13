@@ -10,7 +10,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import safeinsurance.entities.Employés2;
 import safeinsurance.services.EmployésService;
-import safeinsurance.services.clientservices;
 import safeinsurance.tools.MyConnection ;
 
 /**
@@ -31,6 +30,8 @@ public class main {
 //        EmployésService es = new EmployésService();
 //        es.ajouterEmployés(E);
 //      es.ajouterEmployés2(E);
+
+
 Statement st;
         ResultSet rst;
         ResultSet rstt;
@@ -60,6 +61,7 @@ Statement st;
             System.out.println(ex.getMessage());
         }  
 //        System.out.println(mdp); 
+        
 
     }
     

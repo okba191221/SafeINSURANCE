@@ -12,12 +12,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="528.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.Afficher_employésController">
    <children>
-      <TextField fx:id="resNom" layoutX="57.0" layoutY="170.0" prefHeight="25.0" prefWidth="174.0" promptText="nom" />
-      <TextField fx:id="resPrenom" layoutX="57.0" layoutY="220.0" prefHeight="25.0" prefWidth="174.0" promptText="prenom" />
-      <TextField fx:id="resFonction" layoutX="57.0" layoutY="267.0" prefHeight="25.0" prefWidth="174.0" promptText="fonction" />
-      <TextField fx:id="resMatricule" layoutX="57.0" layoutY="317.0" onMouseClicked="#getSelected" prefHeight="25.0" prefWidth="174.0" promptText="matricule" />
-      <TextField fx:id="resCIN" layoutX="57.0" layoutY="360.0" prefHeight="25.0" prefWidth="174.0" promptText="cin" />
-      <TextField fx:id="resTel" layoutX="57.0" layoutY="405.0" prefHeight="25.0" prefWidth="174.0" promptText="tel" />
+      <TextField fx:id="resNom" layoutX="71.0" layoutY="170.0" prefHeight="25.0" prefWidth="160.0" promptText="nom" />
+      <TextField fx:id="resPrenom" layoutX="71.0" layoutY="220.0" prefHeight="25.0" prefWidth="160.0" promptText="prenom" />
+      <TextField fx:id="resFonction" layoutX="71.0" layoutY="267.0" prefHeight="25.0" prefWidth="160.0" promptText="fonction" />
+      <TextField fx:id="resMatricule" layoutX="71.0" layoutY="317.0" onMouseClicked="#getSelected" prefHeight="25.0" prefWidth="160.0" promptText="matricule" />
+      <TextField fx:id="resCIN" layoutX="71.0" layoutY="360.0" prefHeight="25.0" prefWidth="160.0" promptText="cin" />
+      <TextField fx:id="resTel" layoutX="71.0" layoutY="405.0" prefHeight="25.0" prefWidth="160.0" promptText="tel" />
       <TableView fx:id="listeEmployés" layoutX="234.0" onMouseClicked="#getSelected" prefHeight="512.0" prefWidth="654.0">
         <columns>
           <TableColumn fx:id="resLname" prefWidth="75.0" text="nom" />
@@ -57,9 +57,9 @@
          </font>
       </Button>
       <Button layoutX="57.0" layoutY="30.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: CYAN;" text="Ajouter" />
-      <TextField fx:id="resEmail" layoutX="57.0" layoutY="446.0" prefHeight="25.0" prefWidth="174.0" promptText="login" />
+      <TextField fx:id="resEmail" layoutX="71.0" layoutY="446.0" prefHeight="25.0" prefWidth="160.0" promptText="login" />
       <TextField blendMode="DARKEN" layoutY="446.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="email" />
-      <TextField fx:id="resMdp" layoutX="57.0" layoutY="488.0" prefHeight="25.0" prefWidth="174.0" promptText="mot de passe" />
+      <TextField fx:id="resMdp" layoutX="71.0" layoutY="488.0" prefHeight="25.0" prefWidth="160.0" promptText="mot de passe" />
       <TextField blendMode="DARKEN" layoutY="488.0" prefHeight="26.0" prefWidth="67.0" style="-fx-background-color: beige;" text="mdp" />
       <Button layoutY="2.0" mnemonicParsing="false" onAction="#retour" text="retour" />
    </children>

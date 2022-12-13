@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="safeinsurance.GUI.PagetestController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.PagetestController">
    <children>
-      <AnchorPane layoutX="83.0" layoutY="14.0" prefHeight="353.0" prefWidth="349.0" style="-fx-background-color: #7FFF00;" />
+      <AnchorPane layoutX="83.0" layoutY="14.0" prefHeight="353.0" prefWidth="349.0" style="-fx-background-color: #7FFF00;">
+         <children>
+            <Button layoutX="39.0" layoutY="52.0" mnemonicParsing="false" onAction="#send" prefHeight="37.0" prefWidth="123.0" text="Send" />
+            <TextField fx:id="txt_assurance1" layoutX="39.0" layoutY="117.0" text="Assurance 1" />
+            <TextField fx:id="txt_assurance2" layoutX="41.0" layoutY="177.0" text="Assurance 2" />
+            <TextField fx:id="txt_assurance3" layoutX="43.0" layoutY="239.0" text="Assurance 3" />
+            <TextField fx:id="txt_assurance11" layoutX="212.0" layoutY="129.0" text="500" />
+            <TextField fx:id="txt_assurance12" layoutX="214.0" layoutY="189.0" text="800" />
+            <TextField fx:id="txt_assurance13" layoutX="216.0" layoutY="251.0" text="1500" />
+         </children></AnchorPane>
+      <TextField />
    </children>
 </AnchorPane>

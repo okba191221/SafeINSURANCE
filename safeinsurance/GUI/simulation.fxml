@@ -7,10 +7,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="954.0" prefWidth="1271.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="safeinsurance.GUI.SimulationController">
+<AnchorPane id="AnchorPane" prefHeight="954.0" prefWidth="1271.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="safeinsurance.GUI.SimulationController">
    <children>
-      <RadioButton fx:id="rbutton" layoutX="158.0" layoutY="119.0" mnemonicParsing="false" onAction="#assurance" text="assurance 1">
+      <Button fx:id="Sm" layoutX="217.0" layoutY="808.0" mnemonicParsing="false" onAction="#somme" prefHeight="63.0" prefWidth="99.0" text="Calculer devis">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField layoutX="50.0" layoutY="73.0" text="Saisir votre âge" />
+      <RadioButton fx:id="rbutton11" layoutX="288.0" layoutY="74.0" mnemonicParsing="false" onAction="#assurance" text="Moins 35 ans">
          <font>
             <Font size="18.0" />
          </font>
@@ -18,18 +23,13 @@
             <ToggleGroup fx:id="tgchoice_1" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rbutton2" layoutX="308.0" layoutY="119.0" mnemonicParsing="false" onAction="#assurance" text="assurance 2" toggleGroup="$tgchoice_1">
+      <RadioButton fx:id="rbutton12" layoutX="464.0" layoutY="73.0" mnemonicParsing="false" onAction="#assurance" text="Plus 35 ans" toggleGroup="$tgchoice_1">
          <font>
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbutton1" layoutX="461.0" layoutY="119.0" mnemonicParsing="false" onAction="#assurance" text="assurance 3" toggleGroup="$tgchoice_1">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </RadioButton>
-      <Button fx:id="Sm" layoutX="158.0" layoutY="261.0" mnemonicParsing="false" onAction="#somme" text="somme" />
-      <RadioButton fx:id="rbutton3" layoutX="166.0" layoutY="181.0" mnemonicParsing="false" onAction="#assurance" text="assurance 1">
+      <TextField layoutX="50.0" layoutY="116.0" text="Saisir votre genre" />
+      <RadioButton fx:id="rbutton21" layoutX="288.0" layoutY="117.0" mnemonicParsing="false" onAction="#assurance" text="Homme">
          <font>
             <Font size="18.0" />
          </font>
@@ -37,16 +37,244 @@
             <ToggleGroup fx:id="tgchoice_2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rbutton21" layoutX="316.0" layoutY="181.0" mnemonicParsing="false" onAction="#assurance" text="assurance 2" toggleGroup="$tgchoice_2">
+      <RadioButton fx:id="rbutton22" layoutX="464.0" layoutY="116.0" mnemonicParsing="false" onAction="#assurance" text="Femme" toggleGroup="$tgchoice_2">
          <font>
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbutton11" layoutX="469.0" layoutY="181.0" mnemonicParsing="false" onAction="#assurance" text="assurance 3" toggleGroup="$tgchoice_2">
+      <TextField layoutX="50.0" layoutY="161.0" text="Saire votre profession" />
+      <RadioButton fx:id="rbutton31" layoutX="288.0" layoutY="162.0" mnemonicParsing="false" onAction="#assurance" text="Ouvriers">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton32" layoutX="464.0" layoutY="161.0" mnemonicParsing="false" onAction="#assurance" text="Étiques ou privés" toggleGroup="$tgchoice_3">
          <font>
             <Font size="18.0" />
          </font>
       </RadioButton>
-      <TextField fx:id="myLabel" layoutX="404.0" layoutY="321.0" text="Somme" />
+      <RadioButton fx:id="rbutton33" layoutX="659.0" layoutY="161.0" mnemonicParsing="false" onAction="#assurance" text="Cadres et médecins" toggleGroup="$tgchoice_3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton34" layoutX="875.0" layoutY="161.0" mnemonicParsing="false" onAction="#assurance" text="Investisseurs et entrepreneurs " toggleGroup="$tgchoice_3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="50.0" layoutY="205.0" text="Lieu de résidence" />
+      <RadioButton fx:id="rbutton41" layoutX="288.0" layoutY="206.0" mnemonicParsing="false" onAction="#assurance" text="Zone urbaine">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_4" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton42" layoutX="464.0" layoutY="206.0" mnemonicParsing="false" onAction="#assurance" text="Zone rurale" toggleGroup="$tgchoice_4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="50.0" layoutY="254.0" text="Date permis" />
+      <RadioButton fx:id="rbutton51" layoutX="289.0" layoutY="255.0" mnemonicParsing="false" onAction="#assurance" text="moins 1 an">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_5" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton52" layoutX="465.0" layoutY="255.0" mnemonicParsing="false" onAction="#assurance" text="Entre 1 et 5 ans" toggleGroup="$tgchoice_5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton53" layoutX="659.0" layoutY="255.0" mnemonicParsing="false" onAction="#assurance" text="plus 5 ans" toggleGroup="$tgchoice_5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="50.0" layoutY="299.0" prefHeight="25.0" prefWidth="149.0" text="Saisir nombre de places" />
+      <RadioButton fx:id="rbutton61" layoutX="289.0" layoutY="301.0" mnemonicParsing="false" onAction="#assurance" text="2 places">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_6" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton62" layoutX="465.0" layoutY="300.0" mnemonicParsing="false" onAction="#assurance" text="4 places" toggleGroup="$tgchoice_6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton63" layoutX="660.0" layoutY="300.0" mnemonicParsing="false" onAction="#assurance" text="5 places " toggleGroup="$tgchoice_6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="50.0" layoutY="340.0" prefHeight="25.0" prefWidth="167.0" text="Saisir type de votre voiture" />
+      <RadioButton fx:id="rbutton71" layoutX="289.0" layoutY="342.0" mnemonicParsing="false" onAction="#assurance" text="Commerciale">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_7" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton72" layoutX="465.0" layoutY="341.0" mnemonicParsing="false" onAction="#assurance" text="tourisme" toggleGroup="$tgchoice_7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton73" layoutX="660.0" layoutY="341.0" mnemonicParsing="false" onAction="#assurance" text="Taxi" toggleGroup="$tgchoice_7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton74" layoutX="812.0" layoutY="341.0" mnemonicParsing="false" onAction="#assurance" text="Louage" toggleGroup="$tgchoice_7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="50.0" layoutY="389.0" prefHeight="25.0" prefWidth="167.0" text="Saisir l'état de votre voitrue" />
+      <RadioButton fx:id="rbutton81" layoutX="287.0" layoutY="391.0" mnemonicParsing="false" onAction="#assurance" text="Neuve">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_8" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton82" layoutX="463.0" layoutY="390.0" mnemonicParsing="false" onAction="#assurance" text="Occasion" toggleGroup="$tgchoice_8">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="14.0" layoutY="446.0" prefHeight="42.0" prefWidth="263.0" text="Saisir une valeur rapprochée de votre véhicule" />
+      <RadioButton fx:id="rbutton91" layoutX="284.0" layoutY="433.0" mnemonicParsing="false" onAction="#assurance" text="entre 5000 et 50 000 dinars">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_9" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton92" layoutX="574.0" layoutY="433.0" mnemonicParsing="false" onAction="#assurance" text="entre 50 000 et 100 000 dinars" toggleGroup="$tgchoice_9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton93" layoutX="875.0" layoutY="430.0" mnemonicParsing="false" onAction="#assurance" text="entre 100 000 et 300 000 dinars" toggleGroup="$tgchoice_9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton94" layoutX="284.0" layoutY="485.0" mnemonicParsing="false" onAction="#assurance" text="entre 300 000 et 500 000 dinars" toggleGroup="$tgchoice_9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton95" layoutX="582.0" layoutY="485.0" mnemonicParsing="false" onAction="#assurance" text="entre 500 000 et 700 000 dinars" toggleGroup="$tgchoice_9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton96" layoutX="882.0" layoutY="485.0" mnemonicParsing="false" onAction="#assurance" text="&gt; 700 000 dinars" toggleGroup="$tgchoice_9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="40.0" layoutY="649.0" prefHeight="25.0" prefWidth="167.0" text="Historiques d'accident" />
+      <RadioButton fx:id="rbutton121" layoutX="291.0" layoutY="648.0" mnemonicParsing="false" onAction="#assurance" text="0 accident">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_12" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton122" layoutX="467.0" layoutY="648.0" mnemonicParsing="false" onAction="#assurance" text="1 accident" toggleGroup="$tgchoice_12">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton123" layoutX="661.0" layoutY="648.0" mnemonicParsing="false" onAction="#assurance" text="2 accidents ou plus" toggleGroup="$tgchoice_12">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="41.0" layoutY="535.0" prefHeight="25.0" prefWidth="167.0" text="Carburant" />
+      <RadioButton fx:id="rbutton101" layoutX="289.0" layoutY="534.0" mnemonicParsing="false" onAction="#assurance" text="Essence">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_10" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton102" layoutX="456.0" layoutY="534.0" mnemonicParsing="false" onAction="#assurance" text="Diesel" toggleGroup="$tgchoice_10">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="40.0" layoutY="594.0" prefHeight="25.0" prefWidth="167.0" text="Chevaux fiscaux" />
+      <RadioButton fx:id="rbutton111" layoutX="289.0" layoutY="594.0" mnemonicParsing="false" onAction="#assurance" text="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgchoice_11" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbutton112" layoutX="465.0" layoutY="593.0" mnemonicParsing="false" onAction="#assurance" text="5" toggleGroup="$tgchoice_11">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton113" layoutX="660.0" layoutY="593.0" mnemonicParsing="false" onAction="#assurance" text="6" toggleGroup="$tgchoice_11">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton114" layoutX="876.0" layoutY="593.0" mnemonicParsing="false" onAction="#assurance" text="7" toggleGroup="$tgchoice_11">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rbutton115" layoutX="1070.0" layoutY="594.0" mnemonicParsing="false" onAction="#assurance" text="&gt;8" toggleGroup="$tgchoice_11">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <TextField layoutX="483.0" layoutY="706.0" prefHeight="229.0" prefWidth="696.0" promptText="Simulation ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="myLabel" layoutX="603.0" layoutY="730.0" prefHeight="50.0" prefWidth="541.0">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="myLabel1" layoutX="603.0" layoutY="797.0" prefHeight="48.0" prefWidth="541.0">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="myLabel2" layoutX="603.0" layoutY="865.0" prefHeight="48.0" prefWidth="541.0">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="14.0" layoutY="718.0" prefHeight="25.0" prefWidth="166.0" text="Saisir votre Nom et Prénom" />
+      <TextField layoutX="14.0" layoutY="755.0" prefHeight="25.0" prefWidth="166.0" text="Saisir votre Adresse mail" />
+      <TextField fx:id="txt_nom_prenom" layoutX="213.0" layoutY="718.0" prefHeight="25.0" prefWidth="185.0" />
+      <TextField fx:id="txt_mail" layoutX="213.0" layoutY="755.0" prefHeight="25.0" prefWidth="185.0" />
    </children>
 </AnchorPane>
